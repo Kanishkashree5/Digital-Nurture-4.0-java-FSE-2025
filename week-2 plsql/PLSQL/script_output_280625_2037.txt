@@ -1,0 +1,25 @@
+
+ORA-00955: name is already used by an existing object
+
+https://docs.oracle.com/error-help/db/ora-00955/Error at Line: 4 Column: 0 
+
+
+ORA-00955: name is already used by an existing object
+
+https://docs.oracle.com/error-help/db/ora-00955/Error at Line: 4 Column: 0 
+
+
+
+Table TRANSACTIONS created.
+
+Elapsed: 00:00:00.024
+
+
+Table LOANS created.
+
+Elapsed: 00:00:00.013
+
+
+Table EMPLOYEES created.
+
+Elapsed: 00:00:00.011
