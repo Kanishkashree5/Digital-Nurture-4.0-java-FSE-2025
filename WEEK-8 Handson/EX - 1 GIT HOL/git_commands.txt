@@ -1,0 +1,206 @@
+abise@MyPC MINGW64 ~
+$ git config --global user.name "KanishkaShree"
+
+abise@MyPC MINGW64 ~
+$ git config --global user.email "kanishkasri.vnb@gmail.com"
+
+abise@MyPC MINGW64 ~
+$ git config --global --list
+user.name=KanishkaShree
+user.email=kanishkasri.vnb@gmail.com
+core.editor=C:/Program Files/Notepad++.exe' -multiInst  -nosession
+
+abise@MyPC MINGW64 ~
+$ notepad++
+v
+abise@MyPC MINGW64 ~
+$ git config --global core.editor "C:\Progarm Files\Notepad++"
+
+abise@MyPC MINGW64 ~
+$ git config --global --edit
+hint: Waiting for your editor to close the file... C:\Progarm Files\Notepad++: line 1: C:Progarm: command not found
+error: there was a problem with the editor 'C:\Progarm Files\Notepad++'
+
+abise@MyPC MINGW64 ~
+$ git clone https://gitlab.com/KanishkaShree/GitDemo.git
+Cloning into 'GitDemo'...
+info: please complete authentication in your browser...
+
+
+abise@MyPC MINGW64 ~
+$ git clone https://gitlab.com/KanishkaShree/GitDemo.git
+Cloning into 'GitDemo'...
+info: please complete authentication in your browser...
+fatal: Missing 'code' in response.
+
+
+abise@MyPC MINGW64 ~
+$ echo "Hello Git" > demo.txt
+
+abise@MyPC MINGW64 ~
+$ git add demo.txt
+fatal: not a git repository (or any of the parent directories): .git
+
+abise@MyPC MINGW64 ~
+$ git clone https://gitlab.com/kanishkasri.vnb
+Cloning into 'kanishkasri.vnb'...
+fatal: unable to access 'https://gitlab.com/kanishkasri.vnb/': The requested URL returned error: 403
+
+abise@MyPC MINGW64 ~
+$ git clone https://gitlab.com/kanishkasri.vnb/GitDemo.git
+Cloning into 'GitDemo'...
+
+
+abise@MyPC MINGW64 ~
+$ git remote set-url origin https://gitlab.com/kanishkasri.vnb/GitDemo.git
+fatal: not a git repository (or any of the parent directories): .git
+
+abise@MyPC MINGW64 ~
+$ pwd
+/c/Users/abise
+
+abise@MyPC MINGW64 ~
+$ ls -a
+ ./
+ ../
+ .android/
+ .bash_history
+ .cache/
+ .eclipse/
+ .gitconfig
+ .idea/
+ .idlerc/
+ .jdks/
+ .lesshst
+ .m2/
+ .matplotlib/
+ .node_repl_history
+ .p2/
+ .vscode/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IdeaProjects/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{588b2300-9345-11ed-a9d3-a05950b5734e}.TM.blf
+ NTUSER.DAT{588b2300-9345-11ed-a9d3-a05950b5734e}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{588b2300-9345-11ed-a9d3-a05950b5734e}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ Postman/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ cricketapp/
+ demo.txt
+ eclipse/
+ eclipse-workspace/
+ eventexamplesapp/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ officespacerentalapp/
+ project/
+
+abise@MyPC MINGW64 ~
+$ ^C
+
+abise@MyPC MINGW64 ~
+$ git clone https://gitlab.com/kanishkasri.vnb/GitDemo.git
+Cloning into 'GitDemo'...
+info: please complete authentication in your browser...
+remote: The project you were looking for could not be found or you don't have permission to view it.
+fatal: repository 'https://gitlab.com/kanishkasri.vnb/GitDemo.git/' not found
+
+abise@MyPC MINGW64 ~
+$ git clone https://gitlab.com/kanishkasri.vnb/GitDemo.git
+Cloning into 'GitDemo'...
+remote: The project you were looking for could not be found or you don't have permission to view it.
+fatal: repository 'https://gitlab.com/kanishkasri.vnb/GitDemo.git/' not found
+
+abise@MyPC MINGW64 ~
+$ mkdir GitDemo
+
+abise@MyPC MINGW64 ~
+$ cd GitDemo
+
+abise@MyPC MINGW64 ~/GitDemo
+$ git init
+Initialized empty Git repository in C:/Users/abise/GitDemo/.git/
+
+abise@MyPC MINGW64 ~/GitDemo (master)
+$ git remote add origin https://gitlab.com/kanishkasri.vnb/GitDemo.git
+
+abise@MyPC MINGW64 ~/GitDemo (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+abise@MyPC MINGW64 ~/GitDemo (master)
+$ echo "Hello Git" > demo.txt
+
+abise@MyPC MINGW64 ~/GitDemo (master)
+$ git add demo.txt
+warning: in the working copy of 'demo.txt', LF will be replaced by CRLF the next time Git touches it
+
+abise@MyPC MINGW64 ~/GitDemo (master)
+$ git commit -m "Added demo.txt"
+[master (root-commit) a30f40b] Added demo.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 demo.txt
+
+abise@MyPC MINGW64 ~/GitDemo (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://gitlab.com/kanishkasri.vnb/GitDemo.git'
+
+abise@MyPC MINGW64 ~/GitDemo (master)
+$ ^C
+
+abise@MyPC MINGW64 ~/GitDemo (master)
+$ ^C
+
+abise@MyPC MINGW64 ~/GitDemo (master)
+$ git branch -M main
+
+abise@MyPC MINGW64 ~/GitDemo (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 232 bytes | 116.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote:
+remote: The private project kanishkasri.vnb/GitDemo was successfully created.
+remote:
+remote: To configure the remote, run:
+remote:   git remote add origin https://gitlab.com/kanishkasri.vnb/GitDemo.git
+remote:
+remote: To view the project, visit:
+remote:   https://gitlab.com/kanishkasri.vnb/GitDemo
+remote:
+remote:
+remote:
+To https://gitlab.com/kanishkasri.vnb/GitDemo.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+
